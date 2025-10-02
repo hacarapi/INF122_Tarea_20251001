@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<link rel="stylesheet" href="../css/style.css">
+
+<body>
+    <div class="padre" class="container-fluid">
+        <div class="menu" class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Principal</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Todos Santos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../pages/historia_t.html">Historia</a></li>
+                                    <li><a class="dropdown-item" href="../pages/costumbres_t.html">Costumbres</a></li>
+                                    <li><a class="dropdown-item" href="../pages/gastronomia_t.html">Gastronomia</a></li>
+                                    <li><a class="dropdown-item" href="../pages/mitos_t.html">Mitos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Halloween
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../pages/historia_h.html">Historia</a></li>
+                                    <li><a class="dropdown-item" href="../pages/costumbres_h.html">Costumbres</a></li>
+                                    <li><a class="dropdown-item" href="../pages/gastronomia_h.html">Gastronomia</a></li>
+                                    <li><a class="dropdown-item" href="../pages/mitos_h.html">Mitos</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./acerca_de.html">Acerca de...</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="contenido container-fluid text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 text-center">
+                    <h1 class="mb-4">Costumbres de Todos Santos</h1>
+                    <!-- Componente Bootstrap: Accordion -->
+                    <div class="accordion" id="costumbresAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingMesa">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mesaCollapse" aria-expanded="true" aria-controls="mesaCollapse">
+                                    La Mesa de Todos Santos
+                                </button>
+                            </h2>
+                            <div id="mesaCollapse" class="accordion-collapse collapse show" aria-labelledby="headingMesa"
+                                data-bs-parent="#costumbresAccordion">
+                                <div class="accordion-body text-justify">
+                                    Una de las costumbres más importantes es la preparación de la mesa de Todos Santos,
+                                    donde se colocan ofrendas para recibir a las almas de los difuntos. La mesa incluye
+                                    panes en forma de escalera, cruces, figuras humanas, además de frutas, bebidas,
+                                    comidas típicas y objetos que fueron apreciados por el difunto. Todo esto se
+                                    acompaña de flores, velas y fotografías.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCementerio">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#cementerioCollapse" aria-expanded="false"
+                                    aria-controls="cementerioCollapse">
+                                    Visita al Cementerio
+                                </button>
+                            </h2>
+                            <div id="cementerioCollapse" class="accordion-collapse collapse" aria-labelledby="headingCementerio"
+                                data-bs-parent="#costumbresAccordion">
+                                <div class="accordion-body text-justify">
+                                    El 2 de noviembre, las familias acuden al cementerio para compartir alimentos y rezar
+                                    junto a las tumbas de sus seres queridos. Es común llevar música, flores y comida,
+                                    y se realizan rezos y cánticos para honrar a los difuntos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPan">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panCollapse" aria-expanded="false" aria-controls="panCollapse">
+                                    El Pan de T'anta Wawa
+                                </button>
+                            </h2>
+                            <div id="panCollapse" class="accordion-collapse collapse" aria-labelledby="headingPan"
+                                data-bs-parent="#costumbresAccordion">
+                                <div class="accordion-body text-justify">
+                                    El pan de T'anta Wawa es una figura tradicional hecha de masa dulce, decorada y con
+                                    forma de niño o niña. Representa a los difuntos pequeños y es parte esencial de la
+                                    mesa. También se intercambia entre familiares y amigos como símbolo de afecto y
+                                    recuerdo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCompartir">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#compartirCollapse" aria-expanded="false"
+                                    aria-controls="compartirCollapse">
+                                    Compartir y Solidaridad
+                                </button>
+                            </h2>
+                            <div id="compartirCollapse" class="accordion-collapse collapse" aria-labelledby="headingCompartir"
+                                data-bs-parent="#costumbresAccordion">
+                                <div class="accordion-body text-justify">
+                                    Durante Todos Santos, es costumbre compartir alimentos y bebidas con vecinos y
+                                    visitantes, especialmente con quienes rezan por las almas. Esta práctica fortalece
+                                    los lazos comunitarios y familiares, y refleja el espíritu solidario de la festividad.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ads container-fluid py-3">
+            <h4 class="mb-3">Noticias y Eventos</h4>
+            <ul class="list-group mb-3">
+                <li class="list-group-item">
+                    <strong>31 de Octubre:</strong> Fiesta de Halloween en la UMSA. ¡No olvides tu disfraz!
+                </li>
+                <li class="list-group-item">
+                    <strong>1 de Noviembre:</strong> Celebración de Todos Santos en la plaza principal.
+                </li>
+                <li class="list-group-item">
+                    <strong>2 de Noviembre:</strong> Feria de gastronomía tradicional boliviana.
+                </li>
+            </ul>
+            <h5 class="mb-2">Síguenos en redes sociales</h5>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank" class="mx-2 text-dark text-decoration-none">
+                    <i class="fa fa-facebook-official fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="mx-2 text-dark text-decoration-none">
+                    <i class="fa fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="mx-2 text-dark text-decoration-none">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </a>
+            </div>
+        </div>
+        <div class="pie container-fluid text-center py-3">
+            <h6 class="mb-1">Realizado por Huber Acarapi Mamani &copy; 2025</h6>
+        </div>
+    </div>
+
+    <!--Recomendacion-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

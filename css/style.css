@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;        /* Que el body herede el 100% del alto */
+    margin: 0;           /* Sin márgenes extras */
+}
+.padre{
+    background-color: blueviolet;
+    display: grid;
+    grid-gap: 10px; /*espaciado*/
+    grid-template-columns: 7fr 2fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    height: 100vh; /* Ocupa toda la ventana */
+}
+
+.padre .menu{
+    background-color: burlywood;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    height: 100%;
+}
+
+.padre .menu nav {
+    height: 100%;   /* Navbar estira su alto */
+    display: flex;  
+    align-items: center; /* Centrado vertical */
+}
+
+.padre .contenido{
+    background-color: burlywood;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    overflow-y: auto; /* Scroll vertical si el contenido sobrepasa */
+}
+
+.padre .ads{
+    background-color: burlywood;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.padre .pie{
+    background-color: burlywood;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.carousel-item img{
+    height: 240px;
+    width: 100%; /* Mejor que 50%, así llena el carrusel */
+    object-fit: cover; /* Para que la imagen no se deforme */
+    padding: auto;
+}
